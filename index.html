@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanna's Webpage</title>
+    <style>
+        body  {
+            margin: 0;
+            padding: 0px;
+            background-image: url(IMG/z4.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Cursive, sans-serif;
+        }
+
+        footer {
+            color: pink;
+            background-color: gray;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            margin-top: auto;
+            background: url(IMG/z4.jpeg) center/cover no-repeat;
+        }
+
+        h1, h2, h3 {
+            color: brown;
+            text-align: center;
+            text-shadow: 0 0 30px rgba(0, 0, 128, 0.8);
+        }
+
+        header {
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            background-color: burlywood;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            background: url(IMG/z4.jpeg) center/cover no-repeat;
+            z-index: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: burlywood;
+        }
+
+        .navbar li {
+            float: right;
+            margin-right: 30px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+        }
+
+        .description-about-myself-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .button-container button {
+            margin: 0 5px;
+        }
+
+        .container {
+            background-color: burlywood;
+            padding: 20px;
+            border-radius: 10px; 
+            margin: 20px 0; 
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 0, 128, 0.8);
+        }   
+
+        h2 {
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 30px rgba(0, 0, 128, 0.8);
+            animation: lightning 1s infinite;
+        }
+
+        @keyframes lightning {
+            0% {
+                text-shadow: 0 0 30px rgba(128, 0, 0, 0.8);
+            }
+            50% {
+                text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+            100% {
+                text-shadow: 0 0 30px rgba(128, 0, 0, 0.8);
+            }
+        }
+
+        .info2-container img {
+            max-height: 1000px;
+            width: auto;
+            transition: filter 0.5s infinite;
+        }
+        .info2-container img.glow {
+            filter: drop-shadow(0 0 10px rgba(238, 130, 238, 1));
+        }
+         .hanna-container img {
+            height: auto;
+            transition: filter 0.5s infinite;
+        }
+
+        .hanna-container img.glow {
+            filter: drop-shadow(0 0 10px rgba(238, 130, 238, 1));
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="flex.html">Flex</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="image-container">
+        <div class="hanna-container">
+            <img src="IMG/hanna.jpg" alt="Hanna Ares' image">
+            <h2>Hanna Ares</h2>
+        </div>
+    </div>
+
+    <div class="description-about-myself-container">
+        <div class="container">
+            <h2>Description about myself</h2>
+            <div class="description">
+                <p>
+                    I am Hanna G. Ares, and I am an ambivert. I like reading manhwa, watching anime, and<br>
+                    I also like hanging out with my friends. I only have one hobby, and that is reading.<br>
+                    I am also good at hiding my jealousy.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="button-container">
+        <button type="button" onclick="window.location.href='https://www.facebook.com';">Facebook
+            <img src="IMG/fd.jpg" alt="Facebook" style="height: 40px;">
+        </button>
+        <button type="button" onclick="window.location.href='https://www.instagram.com';">Instagram
+            <img src="IMG/ig.jpg" alt="Instagram" style="height: 40px;">
+        </button>
+        <button type="button" onclick="window.location.href='https://www.twitter.com';">Twitter
+            <img src="IMG/twitter.png" alt="Twitter" style="height: 40px;">
+        </button>
+    </div>
+    <hr>
+    <div class="info2-container">
+        <img src="IMG/info2.jpeg" alt="Information">
+    </div>
+    <hr>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var images = document.querySelectorAll('.hanna-container img, .info2-container img');
+    
+            images.forEach(function (image) {
+                image.addEventListener('click', function () {
+                    this.classList.toggle('glow');
+                });
+            });
+        });
+    </script>
+    <hr>
+    <footer>
+        <h3>footer/Credits: Hanna Ares 2023.</h3>
+    </footer>
+</body>
+</html>

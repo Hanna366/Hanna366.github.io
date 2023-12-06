@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanna's Webpage</title>
+    <style>
+        body {
+            background-image: url(IMG/z6.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        footer {
+            color: white;
+            background-color: gray;
+            font-family: Cursive, sans-serif;
+            text-align: center;
+            padding: 6px;
+            font-size: 12px;
+            margin-top: auto;
+            background: url(IMG/z8.jpeg) center/cover no-repeat;
+        }
+
+        h1,
+        h2 {
+            color: brown;
+            font-family: Cursive, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        main {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .navbar ul{
+            list-style-type: none;
+            background-color: burlywood;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            background: url(IMG/z6.jpeg) center/cover no-repeat;
+            z-index: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: burlywood;
+        }
+
+        .navbar li {
+            float: right;
+            margin-right: 30px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .clm {
+            flex: 25%;
+            padding: 3px;
+        }
+
+        .clm img {
+            width: 100%;
+            height: auto;
+        }
+
+        .pc-container img,
+        .cv-container img,
+        .cz-container img {
+            max-width: 50.3%;
+            height: auto;
+        }
+        .chapter-1-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chapter-2-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chapter-3-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chapter-4-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            color: brown;
+            text-align: center;
+            text-shadow: 0 0 30px rgba(0, 0, 128, 0.8);
+            animation: lightning 1s infinite;
+        }
+
+        @keyframes lightning {
+            0% {
+                text-shadow: 0 0 30px rgba(128, 0, 0, 0.8);
+            }
+
+            50% {
+                text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+
+            100% {
+                text-shadow: 0 0 30px rgba(128, 0, 0, 0.8);
+            }
+        }
+
+        .My-favourite-lesson-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background-color: burlywood;
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 0, 128, 0.8);
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+        .clm img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: filter 0.5s, transform 0.3s;
+        }
+
+        .clm img.glow {
+            filter: drop-shadow(0 0 10px rgba(176, 48, 96, 0.8));
+            transform: scale(1.05);
+        }
+                .clm {
+            flex: 25%;
+            padding: 10px; 
+        }
+
+          .clm img {
+            width: 100%;
+            height: auto;
+        }
+        
+            
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="flex.html">Flex</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="chapter-1-container">
+    <div class="container">
+        <h2>Chapter 1</h2>
+        <div class="chapter 1">
+            <p>
+                In this lesson I learn about the different era's of tech, it is <br>
+                fascinating to have learn about the evolution of all this technology, <br>
+                to be able to create this kind of techs must have take a lot of time and <br>
+                and effort, that's why all of the creators of this things amazes me. <br>
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="clm">
+            <img src="IMG/zeroth.png" alt="zeroth">
+        </div>
+        <div class="clm">
+            <img src="IMG/vaccum.png" alt="vaccum">
+        </div>
+    </div>
+    <div class="chapter-2-container">
+        <div class="container">
+            <h2>Chapter 2</h2>
+            <div class="chapter 2">
+                <p>
+                    In chapter 2, I learn about the different kinds of proffession and career <br>
+                    in computing, thanks to this lesson, it gives me an idea on what career <br>
+                    to chose. <br>
+                </p>
+            </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="clm">
+            <img src="IMG/nm.png" alt="nm">
+        </div>
+        <div class="clm">
+            <img src="IMG/mn.png" alt="mn">
+        </div>
+    </div>
+    <div class="chapter-3-container">
+        <div class="container">
+            <h2>Chapter 3</h2>
+            <div class="chapter 3">
+                <p>
+                    In this chapter, I learn about the difference between data and information <br>
+                    and the four components  of a computer sytem, this was one of the easiest <br>
+                    lesson for me because it is not so complex and it is easy to memorize the <br>
+                    the components <br>
+                </p>
+            </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="clm">
+            <img src="IMG/kl.png" alt="kl">
+        </div>
+        <div class="clm">
+            <img src="IMG/lm.png" alt="lm">
+        </div>
+        </div>
+        <div class="chapter-4-container">
+            <div class="container">
+                <h2>Chapter 4 </h2>
+                <div class="chapter 4">
+                    <p>
+                        In this chapter, our teacher taught us about the different kinds <br>
+                        of cyber criminal and the counter measure to avoid this type of <br>
+                        crimes, what hooks me the most is the white hat hacker, because <br>
+                        they break security  to test the security<br>
+                    </p>
+                </div>
+            </div>
+            </div>
+        <div class="row">
+            <div class="clm">
+                <img src="IMG/crime1.png" alt="crime1">
+            </div>
+            <div class="clm">
+                <img src="IMG/mes1.png" alt="mes1">
+            </div>
+        </div>
+        <div class="My-favourite-lesson-container">
+            <div class="container">
+                <h2> My favourite lesson </h2>
+                <div class="My favourite lesson">
+                    <p>
+                        This is my most favourite, because I get to learn how to create<br>
+                        a webpage and it excites me everytime our teacher discuss this lesson and<br>
+                        whenever I get to create a webpage I feel like I can infiltrate any <br>
+                        website, even though my knowledge regarding this is limited <br>
+                    </p>
+                </div>
+            </div>
+            </div>
+        <div class="row">
+            <div class="clm">
+                <img src="IMG/ht1.png" alt="ht1">
+            </div>
+            <div class="clm">
+                <img src="IMG/cs1.png" alt="cs1">
+            </div>
+        </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var images = document.querySelectorAll('.clm img');
+        
+                images.forEach(function (image) {
+                    image.addEventListener('click', function () {
+                        this.classList.toggle('glow');
+                    });
+                });
+            });
+        </script>
+        
+        <hr>
+
+        <footer>
+            <h3>footer/credits: Hanna Ares 2023.</h3>
+        </footer>
+</body>
+
+</html>
