@@ -1,0 +1,579 @@
+.main-container {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 10px solid black;
+    border-radius: 20px;
+  }
+  
+  .water {
+    margin-top: 200px;
+    width: 1000px;
+    height: 300px;
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image: radial-gradient(
+        at 3% 79%,
+        hsla(240, 100%, 10%, 0.96) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 94% 94%, hsla(358, 100%, 14%, 1) 0px, transparent 50%),
+      radial-gradient(at 26% 61%, hsla(117, 96%, 12%, 1) 0px, transparent 50%),
+      radial-gradient(at 86% 68%, hsla(19, 100%, 39%, 1) 0px, transparent 50%),
+      radial-gradient(at 40% 25%, hsla(30, 100%, 50%, 0.58) 0px, transparent 50%),
+      radial-gradient(at 62% 12%, hsla(48, 100%, 50%, 1) 0px, transparent 50%),
+      radial-gradient(at 79% 18%, hsla(45, 100%, 50%, 1) 0px, transparent 50%),
+      radial-gradient(at 13% 22%, hsla(229, 100%, 21%, 1) 0px, transparent 50%);
+  }
+  
+  .water-filter {
+    position: absolute;
+    margin-left: -3px;
+    margin-top: 50px;
+    width: 984px;
+    height: 220px;
+    filter: url(#mouvement);
+    background-color:hsla(0,0%,0%,1);
+  background-image:
+  radial-gradient(at 65% 13%, hsla(48,100%,49%,0.51) 0px, transparent 50%),
+  radial-gradient(at 98% 84%, hsla(5,100%,31%,1) 0px, transparent 50%),
+  radial-gradient(at 95% 21%, hsla(22,89%,38%,1) 0px, transparent 50%),
+  radial-gradient(at 30% 60%, hsla(108,96%,11%,1) 0px, transparent 50%),
+  radial-gradient(at 14% 15%, hsla(231,95%,11%,1) 0px, transparent 50%),
+  radial-gradient(at 54% 13%, hsla(53,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 12% 83%, hsla(237,100%,9%,1) 0px, transparent 50%);
+    opacity: 100%;
+  }
+  
+  .water-filter-2 {
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 66px;
+    width: 990px;
+    height: 220px;
+    filter: url(#mouvement2);
+   background-color:hsla(0,0%,0%,1);
+  background-image:
+  radial-gradient(at 1% 9%, hsla(277,89%,28%,1) 0px, transparent 50%),
+  radial-gradient(at 47% 13%, hsla(53,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 6% 71%, hsla(228,100%,18%,1) 0px, transparent 50%),
+  radial-gradient(at 47% 79%, hsla(108,90%,15%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 74%, hsla(5,100%,31%,1) 0px, transparent 50%),
+  radial-gradient(at 95% 21%, hsla(22,89%,38%,1) 0px, transparent 50%),
+  radial-gradient(at 55% 68%, hsla(48,100%,49%,0.51) 0px, transparent 50%);;
+    opacity: 60%;
+  }
+  
+  .water-filter-3 {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 64px;
+    width: 1000px;
+    height: 226px;
+    filter: url(#mouvement3);
+  background-color:hsla(0,0%,58%,1);
+  background-image:
+  radial-gradient(at 18% 14%, hsla(277,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 63% 2%, hsla(47,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 48% 76%, hsla(108,100%,25%,1) 0px, transparent 50%),
+  radial-gradient(at 95% 21%, hsla(19,100%,53%,1) 0px, transparent 50%),
+  radial-gradient(at 2% 79%, hsla(228,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 74%, hsla(3,100%,50%,1) 0px, transparent 50%);
+    opacity: 55%;
+    animation: move-horizontally-water 6s infinite;
+    z-index: 9;
+  }
+  
+  .land-main-element {
+    position: absolute;
+    width: 1000px;
+    height: 60px;
+    background-color: black;
+    margin-top: -250px;
+    filter: blur(1px);
+  }
+  
+  .land-top-element {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: -8px;
+    margin-left: 1px;
+    transform: rotate(14deg);
+  }
+  
+  .land-element-2 {
+    width: 70px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: black;
+    margin-top: -28px;
+    margin-left: 45px;
+    transform: rotate(154deg);
+  }
+  
+  .land-element-3 {
+    width: 150px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: black;
+    margin-top: -33px;
+    margin-left: 95px;
+    transform: rotate(7deg);
+  }
+  
+  .land-element-4 {
+    width: 190px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: -30px;
+    margin-left: 235px;
+    transform: rotate(173deg);
+  }
+  
+  .land-element-5 {
+    width: 190px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: -60px;
+    margin-left: 375px;
+    transform: rotate(7deg);
+  }
+  
+  .land-element-6 {
+    width: 190px;
+    height: 50px;
+    border-radius: 23px;
+    background-color: black;
+    margin-top: -40px;
+    margin-left: 550px;
+    transform: rotate(7deg);
+  }
+  
+  .land-element-7 {
+    width: 190px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    margin-top: -53px;
+    margin-left: 740px;
+    transform: rotate(175deg);
+  }
+  
+  .land-element-8 {
+    width: 240px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: -40px;
+    margin-left: 630px;
+    transform: rotate(3deg);
+  }
+  
+  .land-element-9 {
+    width: 86px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -40px;
+    margin-left: 913px;
+    transform: rotate(169deg);
+  }
+  
+  .land-element-10 {
+    width: 64px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -20px;
+    margin-left: 763px;
+    transform: rotate(2deg);
+  }
+  
+  .land-down-element {
+    width: 120px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: 630px;
+    transform: rotate(4deg);
+  }
+  
+  .land-down-element2 {
+    width: 120px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -25px;
+    margin-left: 1px;
+    transform: rotate(174deg);
+  }
+  
+  .land-down-element3 {
+    width: 90px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -14px;
+    margin-left: 101px;
+    transform: rotate(3deg);
+  }
+  
+  .land-down-element4 {
+    width: 160px;
+    height: 22px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -17px;
+    margin-left: 185px;
+    transform: rotate(3deg);
+  }
+  
+  .land-down-element5 {
+    width: 130px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -22px;
+    margin-left: 338px;
+    transform: rotate(174deg);
+  }
+  
+  .land-down-element6 {
+    width: 260px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: -29px;
+    margin-left: 738px;
+    transform: rotate(176deg);
+  }
+  
+  .sun {
+  background: rgb(255,236,150);
+  background: linear-gradient(90deg, rgba(255,236,150,1) 43%, rgba(255,236,109,1) 89%);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    -webkit-box-shadow: 80px 2px 40px 14px #ffdd00;
+    box-shadow: 40px 5px 80px 30px #fae666;
+    margin-top: -350px;
+    margin-left: 475px;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .sun-reflection {
+    margin-top: -350px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    filter: url(#filterSun);
+    box-shadow: 10px 520px 30px 0px #ffdf40;
+    opacity: 74%;
+    animation: move-horizontally-sun 10s infinite;
+  }
+  
+  .sky {
+    background-color: hsla(0, 0%, 100%, 1);
+    background-image: radial-gradient(
+        at 92% 4%,
+        hsla(0, 96%, 15%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 86% 13%, hsla(0, 93%, 48%, 1) 0px, transparent 50%),
+      radial-gradient(at 83% 86%, hsla(48, 100%, 52%, 1) 0px, transparent 50%),
+      radial-gradient(at 7% 4%, hsla(300, 100%, 5%, 1) 0px, transparent 50%),
+      radial-gradient(at 15% 53%, hsla(240, 100%, 18%, 0.73) 0px, transparent 50%),
+      radial-gradient(at 48% 48%, hsla(314, 89%, 49%, 1) 0px, transparent 50%),
+      radial-gradient(at 28% 87%, hsla(336, 79%, 60%, 0.96) 0px, transparent 50%),
+      radial-gradient(at 49% 9%, hsla(0, 79%, 43%, 1) 0px, transparent 50%),
+      radial-gradient(at 5% 26%, hsla(304, 79%, 30%, 0.91) 0px, transparent 50%);
+    width: 1000px;
+    height: 300px;
+    margin-top: -500px;
+  }
+  
+  .border-left {
+    width: 12px;
+    height: 500px;
+    background-color: black;
+    margin-top: -300px;
+    margin-left: -7px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .border-top {
+    width: 1000px;
+    height: 12px;
+    background-color: black;
+    margin-top: -305px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .border-right {
+    width: 500px;
+    height: 12px;
+    background-color: black;
+    margin-top: -55px;
+    margin-left: 750px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  
+  .border-bottom {
+    width: 1000px;
+    height: 12px;
+    background-color: black;
+    margin-top: 189px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 7;
+  }
+  
+  .cloud {
+    margin-top: -800px;
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 540px 60px 0px #fccaf5;
+    position: absolute;
+    z-index: 3;
+    animation: move-horizontally 15s infinite;
+  }
+  
+  .cloud2 {
+    margin-top: -510px;
+    margin-left: 380px;
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 240px 60px 0px #f26d07;
+    position: absolute;
+    animation: move-horizontally 15s infinite;
+  }
+  
+  .cloud3 {
+    margin-top: -510px;
+    margin-left: 400px;
+    width: 270px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 265px 60px 0px #ffe26e;
+    position: absolute;
+  }
+  
+  .cloud4 {
+    margin-top: -522px;
+    margin-left: 595px;
+    width: 380px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    filter: url(#filter3);
+    box-shadow: 10px 265px 60px 0px #360906;
+    position: absolute;
+  }
+  
+  .cloud5 {
+    margin-top: -800px;
+    margin-left: 560px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 560px 60px 0px #f2b668;
+    position: absolute;
+    animation: move-horizontally-reverse 15s infinite;
+  }
+  
+  .cloud6 {
+    margin-top: -800px;
+    margin-left: 560px;
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 660px 60px 0px #fff88f;
+    position: absolute;
+  }
+  
+  .cloud7 {
+    margin-top: -800px;
+    margin-left: 750px;
+    width: 200px;
+    height: 85px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 525px 60px 0px #d64731;
+      animation: move-horizontally 15s infinite;
+  }
+  
+  .cloud8 {
+    margin-top: -50px;
+    margin-left: 150px;
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 610px 60px 0px #d2cafc;
+      animation: move-horizontally-reverse 10s infinite;
+  }
+  
+  .cloud9 {
+    margin-top: -40px;
+    margin-left: 10px;
+    width: 200px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter4);
+    box-shadow: 10px 610px 60px 0px #000333;
+    opacity: 80%;
+      animation: move-horizontally-reverse 19s infinite;
+  }
+  
+  .cloud10 {
+    margin-top: -85px;
+    margin-left: 370px;
+    width: 300px;
+    height: 73px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 540px 60px 0px #ffe563;
+    position: absolute;
+    opacity: 80%;
+    z-index: 6;
+    animation: move-vertically 10s infinite;
+  }
+  
+  .cloud11 {
+      margin-top: -85px;
+    margin-left: 410px;
+    width: 200px;
+    height: 73px;
+    background-color: white;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 10px 640px 30px 0px #ad3b56;
+    position: absolute;
+    opacity: 80%;
+    z-index: 8;
+    animation: move-horizontally-reverse 8s infinite;
+  }
+  
+  .tree {
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    margin-top: -360px;
+    margin-left: -60px;
+    z-index: 5;
+  }
+  
+  .sun-inner-shadow {
+  background-color:hsla(36,100%,86%,1);
+  background-image:
+  radial-gradient(at 12% 77%, hsla(46,100%,60%,1) 0px, transparent 50%),
+  radial-gradient(at 51% 50%, hsla(44,100%,86%,1) 0px, transparent 50%),
+  radial-gradient(at 93% 53%, hsla(18,66%,55%,1) 0px, transparent 50%),
+  radial-gradient(at 1% 19%, hsla(47,94%,60%,1) 0px, transparent 50%),
+  radial-gradient(at 53% 81%, hsla(47,100%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 93% 87%, hsla(28,87%,49%,1) 0px, transparent 50%),
+  radial-gradient(at 94% 18%, hsla(28,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 55% 31%, hsla(45,100%,50%,1) 0px, transparent 50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-top: 574px;
+    margin-left: 475px;
+    position: absolute;
+    z-index: 10;
+    opacity: 35%;
+  }
+  
+  /* Animation */
+  
+  @keyframes move-horizontally {
+    0% {
+      transform: translatex(10px);
+    }
+    50% {
+      transform: translatex(-10px);
+    }
+    100% {
+      transform: translatex(10px)
+    }
+  }
+  
+  @keyframes move-horizontally-reverse {
+    0% {
+      transform: translatex(-10px);
+    }
+    50% {
+      transform: translatex(10px);
+    }
+    100% {
+      transform: translatex(-10px)
+    }
+  }
+  
+  @keyframes move-vertically {
+    0% {
+      transform: translatey(10px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(10px)
+    }
+  }
+  
+  @keyframes move-horizontally-sun {
+    0% {
+      transform: translatex(10px);
+    }
+    50% {
+      transform: translatex(-5px)
+    }
+    100% {
+      transform: translatex(10px)
+    }
+  }
+  
+  @keyframes move-horizontally-water {
+    0% {
+      transform: translatex(-6px);
+    }
+    50% {
+      transform: translatex(6px)
+    }
+    100% {
+      transform: translatex(-6px)
+    }
+  }
